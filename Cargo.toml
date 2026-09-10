@@ -1,0 +1,26 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/pf-format",
+    "crates/pf-core",
+    "crates/pf-ffi",
+    "crates/pf-cli",
+]
+default-members = [
+    "crates/pf-format",
+    "crates/pf-core",
+    "crates/pf-ffi",
+    "crates/pf-cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["PFSerialize Contributors"]
+repository = "https://github.com/pfinal/PFBinary"
+
+[workspace.dependencies]
+pf-format = { path = "crates/pf-format" }
+pf-core = { path = "crates/pf-core" }
+xxhash-rust = { version = "0.8", features = ["xxh3"] }

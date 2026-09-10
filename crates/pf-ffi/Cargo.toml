@@ -1,0 +1,15 @@
+[package]
+name = "pf-ffi"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "C ABI for PFSerialize (cdylib/staticlib)"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "staticlib", "rlib"]
+name = "pfserialize"
+
+[dependencies]
+pf-core = { path = "../pf-core" }
+pf-format = { workspace = true }

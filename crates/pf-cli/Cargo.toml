@@ -1,0 +1,15 @@
+[package]
+name = "pf-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "PFBinary hex dump and roundtrip CLI"
+publish = false
+
+[[bin]]
+name = "pfserialize"
+path = "src/main.rs"
+
+[dependencies]
+pf-core = { workspace = true, features = ["test-utils"] }
+pf-format = { workspace = true }

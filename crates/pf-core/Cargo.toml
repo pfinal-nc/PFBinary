@@ -1,0 +1,15 @@
+[package]
+name = "pf-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "PFSerialize pure Rust encoder/decoder core"
+publish = false
+
+[features]
+default = []
+test-utils = []
+
+[dependencies]
+pf-format = { workspace = true }
+xxhash-rust = { workspace = true }

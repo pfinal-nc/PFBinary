@@ -1,0 +1,10 @@
+[package]
+name = "pf-format"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "PFBinary wire format constants, header, and version dispatch"
+publish = false
+
+[dependencies]
+xxhash-rust = { workspace = true }
